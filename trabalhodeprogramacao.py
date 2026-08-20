@@ -53,7 +53,7 @@ def digitarTexto(texto, velocidade=0.05):
     for caractere in texto:
         print(caractere, end='', flush=True)
         time.sleep(velocidade)
-    print()  # QUEBRA LINHA
+    print()  # QUEBRA LINHAs
 
 
 def limparTela():
@@ -389,18 +389,18 @@ def minigameQuedaDeBraco():
 
         if acertos == 4:
             forca += 2
-            print(">> PERFEITO! +2 de Força! You are pushing hard!")
+            print(">> PERFEITO!")
         elif acertos == 3:
             forca += 1
-            print(">> BOM! +1 de Força!")
+            print(">> BOM!")
         elif acertos == 2:
-            print(">> MEDIANO! A força continuou na mesma.")
+            print(">> MEDIANO!")
         elif acertos == 1:
             forca -= 1
-            print(">> RUIM! -1 de Força... Shin empurra seu braço!")
+            print(">> RUIM!")
         else:
             forca -= 2
-            print(">> PÉSSIMO! -2 de Força! Shin está quase te esmagando!")
+            print(">> PÉSSIMO!")
 
         forca = max(0, min(10, forca))
         time.sleep(1.5)
